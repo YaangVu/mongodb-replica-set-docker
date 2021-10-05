@@ -76,7 +76,7 @@ To connect to the replica set, you can use mongo client.
 <p>  
 
 ```bash
-$ mongo "mongodb://localhost:30001,localhost:30002,localhost:30003/<MONGO_INITDB_DATABASE>?replicaSet=rs0" -u <MONGO_INITDB_USERNAME> --authenticationDatabase admin
+$ mongo "mongodb://localhost:27011,localhost:27012,localhost:27013/<MONGO_INITDB_DATABASE>?replicaSet=rs0" -u <MONGO_INITDB_USERNAME> --authenticationDatabase admin
 ```  
 
 ![Connect to local Replica set](./images/connect-to-replica-set-local.jpg?raw=true "Connect to Replica set running locally")
@@ -91,7 +91,7 @@ $ mongo "mongodb://localhost:30001,localhost:30002,localhost:30003/<MONGO_INITDB
 <p>
 
 ```bash
-$ mongo "mongodb://mongo1:30001,mongo2:30002,mongo3:30003/<MONGO_INITDB_DATABASE>?replicaSet=rs0" -u <MONGO_INITDB_USERNAME> --authenticationDatabase admin
+$ mongo "mongodb://mongo1:27011,mongo2:27012,mongo3:27013/<MONGO_INITDB_DATABASE>?replicaSet=rs0" -u <MONGO_INITDB_USERNAME> --authenticationDatabase admin
 ```  
 
 As mentioned above, you MUST update the local hosts file in the client machine (running this command), to point to the public IP address of the machine where the replica set is running.  
